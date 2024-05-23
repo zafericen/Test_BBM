@@ -1,0 +1,85 @@
+@use 'src/styles/colors';
+
+.general-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: auto;
+  padding: 60px 0 60px 0;
+}
+
+.recommendation-container{
+  width : 1000px;
+  height: 750px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  column-gap: 40px;
+
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  border: solid colors.$border-color;
+  border-width: 0 1px 1px 1px;
+
+  background-color: colors.$primary-color;
+}
+
+.button-container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+@mixin button {
+  width: 25%;
+  height: 64px;
+
+  border-radius: 10px 10px 0 0;
+  display: flex;
+}
+
+.button-selected {
+  border: solid colors.$border-color;
+  border-width: 1px 1px 0 1px;
+
+  background-color: colors.$primary-color;
+  @include button;
+}
+
+.button-not-selected {
+  border: 1px solid colors.$border-color;
+
+  background-color: colors.$secondary-color;
+
+  @include button;
+}
+
+.button-text {
+  font-size: 20px;
+  font-family: inter-medium;
+
+  margin: auto;
+}
+
+@mixin icon {
+  width: 32px;
+  height: 32px;
+
+  margin-top: 12px;
+  margin-right: 10px;
+}
+
+.eye-icon {
+  @include icon;
+  width: 36px;
+  height: 36px;
+}
+
+.button-icon {
+  @include icon;
+}

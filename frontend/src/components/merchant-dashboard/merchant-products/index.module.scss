@@ -1,0 +1,86 @@
+@use 'src/styles/colors';
+
+.general-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 20px auto 50px 90px;
+}
+
+.title {
+  font-size: 24px;
+  font-family: inter-medium;
+}
+
+.product-header{
+  width: 1000px;
+  height: 50px;
+
+  margin-bottom: 10px;
+
+  gap: 67.4%;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.merchant-product-container{
+  width : 1000px;
+  height: 750px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  column-gap: 40px;
+
+  border: solid 1px colors.$border-color;
+  border-radius: 10px;
+
+  background-color: colors.$primary-color;
+}
+
+.button-container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+@mixin button {
+  width: 150px;
+  height: 32px;
+
+  border-radius: 10px 10px 0 0;
+  display: flex;
+}
+
+.add-product-button {
+  display: flex;
+  justify-content: center;
+
+  background-color: colors.$primary-color;
+  border: 1px solid colors.$border-color;
+  border-radius: 10px;
+
+  cursor: pointer;
+}
+
+.button-text {
+  font-size: 16px;
+  font-family: inter-regular;
+  margin-top: 13px;
+  margin-left: 5px;
+}
+
+@mixin icon {
+  width: 40px;
+  height: 40px;
+
+  margin: auto;
+}
+
+.plus-icon {
+  @include icon;
+}

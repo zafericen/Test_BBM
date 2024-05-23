@@ -1,0 +1,175 @@
+@use 'src/styles/colors';
+
+.add-comment-button {
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  height: 100px;
+  border : 1px solid colors.$border-color;
+  background-color: colors.$primary-color;
+  margin-top: 20px;
+  margin-left: 47%;
+  border-radius: 10px;
+}
+
+.plus-icon {
+  width: 60px;
+  height: 60px;
+  margin-top: 17px;
+  margin-left : 20px;
+}
+
+.add-comment-button-text {
+  font-family: inter-regular;
+  font-size: 20px;
+  margin-top: 35px;
+  margin-left: 15px;
+}
+
+.comments-container {
+  display: flex;
+  flex-direction: column;
+  background-color: colors.$primary-color;
+  border-radius: 10px;
+  border: 1px solid colors.$border-color;
+  width: 1000px;
+  height: 850px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.comment-container{
+  display: flex;
+  flex-direction: row;
+  width: 1000px;
+  height: 250px;
+}
+
+.user-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 200px;
+  height: 200px;
+  border-radius: 50px;
+}
+
+.user-image {
+  width: 64px;
+  height: 64px;
+  padding: 10px;
+  border-radius: 40px;
+  background-color: colors.$secondary-color;
+}
+
+.user-name {
+  font-family: inter-medium;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.description-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  margin-top: 20px;
+  width: 750px;
+  height: 200px;
+
+  background-color: colors.$secondary-color;
+}
+
+.rating-and-date {
+  display: flex;
+  flex-direction: row;
+  gap: 60%;
+  margin-left: 20px;
+}
+
+.comment-rating {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+@mixin icon {
+  width: 32px;
+  height: 32px;
+}
+
+.star-icon {
+  @include icon;
+}
+
+.stars{
+  margin-top: 13px;
+  display: flex;
+  flex-direction: row;
+}
+
+.rating-text {
+  margin-left: 10px;
+  margin-top : 20px;
+  font-family: inter-regular;
+  font-size: 18px;
+}
+
+.date {
+  margin-top: 15px;
+  font-family: inter-regular;
+  font-size: 15px;
+}
+
+.comment-text {
+  font-family: inter-regular;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-left: 20px;
+
+  width : 700px;
+  height: 90px;
+}
+
+.comment-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-top: 20px;
+  margin-left: 87%;
+}
+
+@mixin comment-button {
+  background: transparent;
+  border: 0px;
+  height: 20px;
+  width: 20px;
+
+  box-shadow: none;
+  display: flex;
+  align-items: center;
+}
+
+
+.edit-button {
+  @include comment-button;
+}
+
+.delete-button {
+  @include comment-button;
+
+}
+
+@mixin comment-icon {
+  width: 25px;
+  height: 25px;
+}
+
+.edit-icon{
+  @include comment-icon;
+}
+
+.delete-icon{
+  @include comment-icon;
+}

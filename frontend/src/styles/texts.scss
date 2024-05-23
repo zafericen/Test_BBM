@@ -1,0 +1,21 @@
+$navbar-search-text: Type the product \or the category you are looking for;
+$navbar-categories-text: Categories;
+$navbar-favorites-text: Favourites;
+$navbar-dashboard-text: Dashboard;
+$navbar-login-text: Login;
+$navbar-profile-text: Profile;
+
+$login-tab-login-text: Login;
+$login-tab-signup-text: Sign Up;
+
+:export {
+  navbar-search-text: $navbar-search-text;
+  navbar-categories-text: $navbar-categories-text;
+  navbar-favorites-text: $navbar-favorites-text;
+  navbar-login-text: $navbar-login-text;
+  navbar-dashboard-text: $navbar-dashboard-text;
+  navbar-profile-text: $navbar-profile-text;
+
+  login-tab-login-text: $login-tab-login-text;
+  login-tab-signup-text: $login-tab-signup-text;
+}

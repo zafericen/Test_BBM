@@ -1,0 +1,97 @@
+@use "src/styles/colors";
+
+.header {
+  height: 64px;
+  display: flex;
+  background-color: colors.$primary-color;
+  text-decoration-color: colors.$text-color;
+
+  gap: 96px;
+}
+
+@mixin items() {
+  margin-top: 16px;
+  height: 32px;
+  border-radius: 10px;
+  background-color: colors.$secondary-color;
+
+  display: flex;
+  flex-direction: row;
+  padding-left: 12px;
+  align-items: center;
+}
+
+.logo {
+  margin-left: 20px;
+  height: 80%;
+  margin-top: 8px;
+}
+
+search-bar-container {
+  position: relative;
+}
+
+.search-bar {
+  flex: 1 1 auto;
+  width: 500px;
+  height: 10px;
+  min-width: 200px;
+  border: 0px;
+  @include items;
+}
+
+input::placeholder {
+  font-family: inter-light;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.search-icon {
+  position: relative;
+  bottom: 35px;
+  left: 470px;
+  width: 32px;
+  height: 32px;
+  margin-left: auto;
+}
+
+.categories-button {
+  flex: 1 1 auto;
+  min-width: 128px;
+  border: 0px;
+
+  font-family: inter-light;
+  font-size: 14px;
+
+  @include items;
+}
+
+.favorites-button {
+  flex: 1 1 auto;
+  min-width: 128px;
+  border: 0px;
+
+  font-family: inter-light;
+  font-size: 14px;
+
+  @include items;
+}
+
+.profile-button {
+  margin-right: 20px;
+  flex: 1 1 auto;
+  min-width: 96px;
+  border: 0px;
+
+  font-family: inter-light;
+  font-size: 14px;
+
+  @include items;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-left: auto;
+  margin-right: 10px;
+}

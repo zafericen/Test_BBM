@@ -1,0 +1,16 @@
+.app-root{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.background {
+  filter: blur(2px);
+}
+
+.foreground {
+  position: absolute;
+  z-index: 50;
+
+  margin: auto;
+}

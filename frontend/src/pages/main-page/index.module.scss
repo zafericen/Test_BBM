@@ -1,0 +1,11 @@
+@use 'src/styles/colors';
+
+.app-root {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-body {
+  display: flex;
+  flex-direction: row;
+}

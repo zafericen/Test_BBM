@@ -1,0 +1,33 @@
+@use 'src/styles/colors';
+
+.general-container {
+    width: 96px;
+    height: 96px;
+
+    background-color: colors.$primary-color;
+    border: 1px solid colors.$border-color;
+    border-radius: 10px;
+}
+
+.image {
+    width: 96px;
+    height: 96px;
+    border-radius: 10px;
+}
+
+.delete-button {
+    background-color: transparent;
+    border: none;
+    position: relative;
+    top: -26px;
+    left: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  cursor: pointer;
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+}

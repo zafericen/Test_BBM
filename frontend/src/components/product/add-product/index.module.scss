@@ -1,0 +1,142 @@
+@use 'src/styles/colors';
+
+.general-container {
+    display: flex;
+    flex-direction: column;
+
+    width: 800px;
+    height: 550px;
+
+    background-color: colors.$primary-color;
+    border: 1px solid colors.$border-color;
+    border-radius: 10px;
+
+    margin-top: 50px;
+}
+
+.name-and-price {
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.name-box {
+    background-color: colors.$secondary-color;
+    border-radius: 10px;
+    border: 0px;
+    width: 400px;
+    height: 48px;
+    margin-right: 20px;
+}
+.price-box {
+    background-color: colors.$secondary-color;
+    border-radius: 10px;
+    border: 0px;
+    width: 300px;
+    height: 48px;
+}
+
+.description-box {
+    background-color: colors.$secondary-color;
+    border-radius: 10px;
+    border: 0;
+    width: 740px;
+    height: 240px;
+    margin-top: 20px;
+    margin-left: 20px;
+    resize: none;
+
+    font-family: inter-light;
+    font-size: 14px;
+}
+
+.images-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-left: 20px;
+    gap: 20px;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.select-category {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    width: 300px;
+    height: 48px;
+
+    border: 0px;
+    border-radius: 10px;
+    background-color: colors.$secondary-color;
+}
+
+.option-box {
+    background-color: colors.$secondary-color;
+    border-radius: 10px;
+    border: 0px;
+    width: 400px;
+    height: 48px;
+    margin-right: 20px;
+
+    font-family: inter-light;
+    font-size: 14px;
+}
+
+@mixin button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: colors.$secondary-color;
+    border: 0px;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.cancel-button {
+    width: 100px;
+    height: 48px;
+    @include button;
+}
+
+.upload-image-button {
+    background-color: colors.$secondary-color;
+    width: 150px;
+    height: 48px;
+    @include button;
+}
+
+.submit-button {
+    background-color: colors.$secondary-color;
+    width: 100px;
+    height: 48px;
+    @include button;
+}
+
+.button-text {
+    font-family: inter-light;
+    font-size: 14px;
+}
+
+@mixin icon {
+    width: 14px;
+    height: 14px;
+    margin-left: 15px;
+}
+
+.icon {
+  @include icon;
+}
+
